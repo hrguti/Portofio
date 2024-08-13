@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Mi portfolio</title>
+</head>
+<body>
+    <!-- Menú encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">HG</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Sección Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="imagen/foto.jpg" alt="">
+            </div>
+            <h1>HORACIO GUTIERREZ</h1>
+            <h2>Analista en Sistemas</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Sección sobre mi-->
+      <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p><span>"El aprendizaje continuo</span> es la clave para el crecimiento personal y profesional. 
+                Mantenerse abierto al aprendizaje a lo largo de la vida permite adaptarse a los cambios, desarrollar nuevas 
+                habilidades y enriquecer la propia perspectiva."</p>
+            <div class="fila">
+            <!-- Datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            06 - de septiembre.
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            362 - 4742370
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            hrgutierrez@secheep.ar
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            Analista funcional.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>Cine</span>
+                        </div>
+                        <a href="https://tidal.com/" target="_blank" class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                        </a>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajes</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Phone</span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+      </section>
+
+      <!-- Sección Skills-->
+      <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!--Sección curriculum-->
+       <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4> Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Resistencia</span>
+                        <span class="fecha">2005 - 2010</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid harum accusamus nisi quidem voluptatum quos a officia explicabo hic facere itaque blanditiis modi eius aspernatur nostrum dolorem expedita consequuntur.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4> Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Resistencia</span>
+                        <span class="fecha">2005 - 2010</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid harum accusamus nisi quidem voluptatum
+                            quos a officia explicabo hic facere itaque blanditiis modi eius aspernatur nostrum dolorem expedita
+                            consequuntur.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4> Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Resistencia</span>
+                        <span class="fecha">2005 - 2010</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid harum accusamus nisi quidem voluptatum
+                            quos a officia explicabo hic facere itaque blanditiis modi eius aspernatur nostrum dolorem expedita
+                            consequuntur.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4> Front Devolper</h4>
+                        <span class="casa">Universidad de Resistencia</span>
+                        <span class="fecha">2005 - 2010</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid harum accusamus nisi quidem
+                            voluptatum quos a officia explicabo hic facere itaque blanditiis modi eius aspernatur nostrum dolorem
+                            expedita consequuntur.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4> Front Devolper</h4>
+                        <span class="casa">Universidad de Resistencia</span>
+                        <span class="fecha">2005 - 2010</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid harum accusamus nisi quidem
+                            voluptatum quos a officia explicabo hic facere itaque blanditiis modi eius aspernatur nostrum dolorem
+                            expedita consequuntur.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4> Front Devolper</h4>
+                        <span class="casa">Universidad de Resistencia</span>
+                        <span class="fecha">2005 - 2010</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid harum accusamus nisi quidem
+                            voluptatum quos a officia explicabo hic facere itaque blanditiis modi eius aspernatur nostrum dolorem
+                            expedita consequuntur.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!--Sección Portfolio-->
+        <section id="portfolio" class="portfolio">
+            <div class="contenido-seccion">
+                <h2>PORTFOLIO</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="imagen/p1.png" alt="">
+                        <div class="overlay">
+                           <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="imagen/p2.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="imagen/p3.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="imagen/p4.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="imagen/p5.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="imagen/p6.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Sección Contacto-->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <!--FORMULARIO-->
+                    <div class="col">
+                        <input type="text" placeholder="Tu Nombre">
+                        <input type="text" placeholder="Número Telefónico">
+                        <input type="text" placeholder="Dirección de correo">
+                        <input type="text" placeholder="Tema">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                    <!--Mapa-->
+                    <div class="col">
+                        <img src="#" alt="">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Resistencia, Chaco - Argentina
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    3624742370
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    hrgutierrez@secheep.ar
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+       <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-rss"></i></a>
+            </div>
+       </footer>
+       <script src="script.js"></script>
+</body>
+</html>
